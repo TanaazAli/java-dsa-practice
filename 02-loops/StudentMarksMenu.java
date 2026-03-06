@@ -9,8 +9,11 @@ public class StudentMarksMenu {
             if(choice == 1){
                 System.out.println("Enter student's marks (0-100):");
                 int marks = sc.nextInt();
-
-                if(marks >= 90){
+                if (marks<0 || marks > 100) {
+                    System.out.println("Invalid marks. Please enter a value between 0 and 100.");
+                }
+               
+                else if(marks >= 90){
                     System.out.println("This is Good");
                 }
                 else if(marks >= 60){

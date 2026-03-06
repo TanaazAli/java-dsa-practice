@@ -1,4 +1,4 @@
-public class som {
+public class infiniteloop {
     public static void main(String[] args) {
         
         for(; ;){
